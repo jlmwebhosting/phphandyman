@@ -3,6 +3,11 @@ PHP Handyman
 
 PHP handyman is a collection of PHP-functions to extend the standard library.
 
+Requirements
+============
+
+PHP SPL is used, therefore PHP 5 or newer required.
+
 
 How to use
 ----------
