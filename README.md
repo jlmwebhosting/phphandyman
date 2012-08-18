@@ -9,6 +9,7 @@ How to use
 
 Just include/require the class-file and call it:
 
+```php
     require('lib/handyman/String.php');
 
     $somestring = "Just another annoying placeholder for a more useful string";
@@ -18,3 +19,4 @@ Just include/require the class-file and call it:
     } else{
     	//do something spectacular
     }
+```
