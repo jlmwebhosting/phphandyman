@@ -10,13 +10,17 @@ How to use
 Just include/require the class-file and call it:
 
 ```php
-    require('lib/handyman/String.php');
+<?php
 
-    $somestring = "Just another annoying placeholder for a more useful string";
+require('lib/handyman/String.php');
 
-    if (true === String::startswith($somestring, 'Ruby')){
-    	echo 'String started with Ruby';
-    } else{
-    	//do something spectacular
-    }
+$somestring = "Just another annoying placeholder for a more useful string";
+
+if (true === String::startswith($somestring, 'Ruby')){
+	echo 'String started with Ruby';
+} else{
+	//do something spectacular
+}
+
+?>
 ```
