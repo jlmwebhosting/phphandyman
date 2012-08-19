@@ -38,6 +38,35 @@ class Path{
 	}
 
 
+	/**
+	 * create relative path from base to target
+	 */
+	function relpath($base, $target){
+
+	    /* break strings at slashes */
+	    $s = explode('/', $source);
+	    $r = explode('/', $target);
+
+	    /* TODO replace shift with pop + revert */
+	    
+	    /* delete all parts to the first non-equal part */
+	    while ($s[0] === $r[0]){
+	        array_shift($s);
+	        array_shift($r);
+	    }
+	    
+	    /* add wild card to r_parts for each remaining */
+	    // item of s_parts
+	    while ($s[0])
+	    {
+	        array_unshift($r, '..');
+	        array_shift($s);
+	    }
+	    
+	    return implode('/', $r);
+	}
+
+
 
 }
 

@@ -24,6 +24,14 @@ class Array{
 	    return false; 
 	}
 
+	/**
+	 * return last element of array
+	 */
+	public static function last($array){
+		end($array);
+		return current($array);
+	}
+
 }
 
 ?>
