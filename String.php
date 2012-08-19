@@ -1,7 +1,7 @@
 <?php
 
  /**
-  * PHP String library
+  * PHP Handyman String library
   *
   * @author Christian Hotz-Behofsits <chris@stagdesign.at>
   * 
